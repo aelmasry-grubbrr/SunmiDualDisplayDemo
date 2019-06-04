@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_margin="15dip"
+        android:text="Add a tip amount"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip">
+
+        <TextView
+            android:id="@+id/tv_tip_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:text="Tip Amount: "
+            android:textSize="30sp" />
+
+        <com.example.sunmidualdisplaydemo.NumericEditText
+            android:id="@+id/et_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_tip_amount"
+            android:inputType="number"
+            android:textSize="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tv_tip_amount"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <com.example.sunmidualdisplaydemo.MyKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/add_tip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add Tip"/>
+</LinearLayout>
